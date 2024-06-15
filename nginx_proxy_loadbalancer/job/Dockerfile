@@ -1,0 +1,1 @@
+FROM madhavareddy97056/job_board:job_board_image

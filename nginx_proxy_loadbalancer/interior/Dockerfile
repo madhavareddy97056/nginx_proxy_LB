@@ -1,0 +1,1 @@
+FROM madhavareddy97056/demo_interior:interior_img 

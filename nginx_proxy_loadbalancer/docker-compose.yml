@@ -1,0 +1,26 @@
+version: "3"
+services:
+  form:
+    build: "./form/"
+    ports:
+      - "8081:80"
+
+  interior:
+    build: "./interior/"
+    ports:
+      - "8082:80"
+
+  job:
+    build: "./job/"
+    ports:
+      - "8083:80"
+
+  nginx:
+    build: "./nginx/"
+    ports:
+      - "8080:80"
+    depends_on:
+      - form
+      - interior
+      - job
+
